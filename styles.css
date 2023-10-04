@@ -1,0 +1,157 @@
+.icon > a > img {
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+  height: 2.5rem;
+}
+.icon > a > img:hover {
+  width: 2.5625rem;
+}
+.Jazzy {
+  padding-top: 0.3125rem;
+  font-family: "Fuggles", cursive;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Jazzy:hover {
+  transform: scale(0.8);
+}
+.about-us .about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us .about-text {
+  margin: 0 2rem;
+}
+
+.about-us {
+  margin: 6% 5%;
+  position: relative;
+  padding: 3rem;
+  transform: translateY(-10px);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #f8f9fa;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.about-us::before {
+  border-radius: 50%;
+  content: "";
+  background-image: url("./images/pocketwatch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
+}
+.about-us:hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.watch-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.watch-item {
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+}
+
+.watch-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.watch-item img {
+  max-width: 100%;
+  height: 90%;
+  border-radius: 5%;
+}
+.watch-item:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.watch-item {
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.watch-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 5px solid pink;
+  display: inline-block;
+}
+@media (max-width: 580px) {
+  .watch-grid {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    font-size: 50%;
+  }
+}
+
+.copyright-footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+html {
+  font-size: 100%;
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (max-width: 200px) {
+  html {
+    font-size: 30%;
+  }
+}
